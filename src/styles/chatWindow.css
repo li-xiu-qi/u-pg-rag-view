@@ -1,0 +1,16 @@
+.chat-window {
+    position: fixed;
+    top: 20px; /* 距离屏幕顶部的距离 */
+    left: 50%; /* 水平方向定位 */
+    transform: translateX(-50%); /* 水平居中 */
+    width: 100%; /* 固定宽度 */
+    height: 100%; /* 固定高度 */
+    background-color: transparent; /* 设置背景颜色为透明 */
+    margin: 0;
+    padding: 1px 1px 1px 1px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}

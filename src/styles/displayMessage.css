@@ -1,0 +1,26 @@
+.display-message {
+    display: flex; /* 使用弹性布局 */
+    align-items: flex-start; /* 垂直方向顶部对齐 */
+    padding: 10px; /* 内边距为20像素 */
+    border-radius: 8px; /* 圆角边框，半径为8像素 */
+    max-width: 600px; /* 设置消息的最大宽度 */
+    margin: 10px auto; /* 在聊天上下文中居中显示消息并添加垂直间距 */
+    position: relative; /* 确保头像的定位上下文 */
+    background-color: transparent; /* 背景颜色为透明 */
+}
+
+
+.display-message .avatar {
+    margin-right: 10px; /* 在头像和消息内容之间添加间距 */
+    width: 30px; /* 调整宽度为30像素 */
+    height: 30px; /* 调整高度为30像素 */
+    border-radius: 50%; /* 使头像变成圆形 */
+    background-color: transparent; /* 头像占据的空间是透明色 */
+}
+
+.message-content {
+    flex: 1; /* 允许消息内容占用剩余空间 */
+    background-color: #f5f5f5; /* 消息内容背景颜色为柔和的白色 */
+    border-radius: 8px; /* 圆角边框，半径为8像素 */
+    padding: 10px; /* 内边距为10像素 */
+}

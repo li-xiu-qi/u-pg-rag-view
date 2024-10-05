@@ -1,0 +1,71 @@
+.chat-input-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    background-color: transparent;
+    height: auto; /* 高度自适应 */
+    padding-bottom: 30px; /* 底部留白 */
+}
+
+.chat-input {
+    display: flex;
+    width: 40%; /* 固定宽度 */
+    position: relative;
+}
+
+/* 输入框的样式设置 */
+.chat-input .content-editable {
+    flex: 1;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    min-height: 40px; /* 最小高度 */
+    max-height: 100px; /* 最大高度 */
+    line-height: 1.5; /* 行高 */
+    white-space: pre-wrap; /* 自动换行 */
+    word-wrap: break-word; /* 自动换行 */
+    overflow-y: auto; /* 垂直滚动条 */
+    outline: none; /* 移除默认的输入框样式 */
+    resize: none; /* 禁止手动调整大小 */
+    background-color: white; /* 设置背景颜色为白色 */
+}
+
+/* 发送按钮的样式设置 */
+.chat-input button {
+    position: absolute;
+    right: 10px; /* 距离右边 */
+    bottom: 10px; /* 距离底部 */
+    padding: 5px 10px; /* 内边距 */
+    background-color: #5a7d9a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 发送按钮悬停时的样式设置 */
+.chat-input button:hover {
+    background-color: #4a6c84;
+}
+
+/* 图标样式 */
+.chat-input button i {
+    font-size: 16px;
+}
+
+.warning {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    animation: fadeInOut 2s forwards;
+    text-align: center;
+}

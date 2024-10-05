@@ -1,0 +1,30 @@
+.chat-context {
+
+    bottom: 0; /* 设置底部为0 */
+    /*height: calc(100% - 150px); !* 设置高度为减去150像素 *!*/
+    overflow-y: auto; /* 垂直方向出现滚动条 */
+    overflow-x: hidden; /* 水平方向隐藏滚动条 */
+    width: 100%; /* 宽度设置为100% */
+    padding: 10px; /* 内边距设置为10像素 */
+    border-radius: 8px; /* 圆角边框，半径为8像素 */
+    background-color: transparent; /* 设置透明背景颜色 */
+}
+
+/* 自定义滚动条样式 */
+.chat-context::-webkit-scrollbar {
+    width: 8px; /* 滚动条宽度设置为8像素 */
+}
+
+.chat-context::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1); /* 滚动条轨道颜色 */
+    border-radius: 8px; /* 圆角边框，半径为8像素 */
+}
+
+.chat-context::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.4); /* 滚动条滑块颜色 */
+    border-radius: 8px; /* 圆角边框，半径为8像素 */
+}
+
+.chat-context::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.6); /* 滚动条滑块悬停颜色 */
+}

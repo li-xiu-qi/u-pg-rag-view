@@ -1,0 +1,31 @@
+/* 设置页面主体的样式 */
+body {
+    /* 定义页面默认字体 */
+    font-family: Arial, sans-serif;
+    /* 设置背景颜色 */
+    background-color: #7491ad;
+    /* 移除页面默认的外边距 */
+    margin: 0;
+    /* 移除页面默认的内边距 */
+    padding: 0;
+    /* 设置页面高度为视窗高度 */
+    height: 100vh;
+    /* 使用弹性布局 */
+    display: flex;
+    flex-direction: row;
+}
+
+/* 设置App组件的样式 */
+.App {
+    /* 使用弹性布局 */
+    display: flex;
+    /* 设置主轴对齐方式为居中 */
+    justify-content: center;
+    /* 设置侧轴对齐方式为居中 */
+    align-items: center;
+    /* 设置高度为100% */
+    height: 100%;
+    /* 设置宽度为100% */
+    width: 100%;
+}
+

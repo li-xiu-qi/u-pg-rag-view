@@ -1,0 +1,51 @@
+.right-sidebar {
+    width: 300px; /* 设置宽度为300px */
+    height: 75%; /* 设置高度为75% */
+    background-color: #c7d3e3;
+    position: fixed;
+    top: 10vh;
+    right: 10px;
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    z-index: 9999; /* 确保最高的z-index */
+}
+
+.right-sidebar.collapsed {
+    width: 0;
+    opacity: 0; /* 折叠时完全透明 */
+}
+
+.sidebar-content {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.right-sidebar.collapsed .sidebar-content {
+    opacity: 0;
+}
+
+.toggle-button {
+    position: fixed;
+    top: 50%; /* 垂直居中 */
+    right: 310px; /* 调整为侧边栏宽度+padding */
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+    color: white;
+    border: none;
+    border-radius: 50%; /* 圆形 */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: right 0.3s ease;
+    z-index: 10000; /* 确保按钮的最高z-index */
+    opacity: 1; /* 确保按钮不透明 */
+}
+
+.right-sidebar.collapsed + .toggle-button {
+    right: 10px; /* 折叠时按钮位置 */
+}

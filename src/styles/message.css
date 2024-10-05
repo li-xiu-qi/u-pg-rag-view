@@ -1,0 +1,17 @@
+.user-message {
+    border-radius: 8px; /* 圆角边框，半径为8像素 */
+    margin: 10px 0; /* 上下外边距为10像素 */
+    max-width: 650px; /* 最大宽度为650像素 */
+    word-wrap: break-word; /* 自动换行 */
+}
+
+.assistant-message {
+    border-radius: 8px; /* 圆角边框，半径为8像素 */
+    margin: 10px 0; /* 上下外边距为10像素 */
+    max-width: 650px; /* 最大宽度为650像素 */
+    word-wrap: break-word; /* 自动换行 */
+}
+
+.assistant-message .web-search-data {
+    margin-top: 10px; /* 上外边距为10像素 */
+}

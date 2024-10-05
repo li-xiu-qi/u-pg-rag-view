@@ -1,0 +1,26 @@
+.left-sidebar {
+    width: 80px;
+    height: 60vh;
+    background-color: #c7d3e3;
+    position: relative;
+    left: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 10vh 10vh 0 0;
+    border-radius: 10px;
+    z-index: 9999;
+}
+
+.left-sidebar img {
+    width: 60px; /* 设置左上角logo宽度为60px */
+    margin-bottom: 20px; /* 设置底部外边距为20px */
+}
+
+.left-sidebar button {
+    width: 50px; /* 设置按钮宽度为50px */
+    height: 50px; /* 设置按钮高度为50px */
+    background-color: white; /* 设置按钮背景颜色为白色 */
+    border-radius: 50%; /* 设置按钮为圆形 */
+    border: 1px solid #e0e0e0; /* 设置按钮边框颜色为#e0e0e0 */
+    margin-bottom: 10px; /* 设置底部外边距为10px */
+}
