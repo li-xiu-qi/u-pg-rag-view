@@ -1,7 +1,6 @@
 .chat-context {
 
     bottom: 0; /* 设置底部为0 */
-    /*height: calc(100% - 150px); !* 设置高度为减去150像素 *!*/
     overflow-y: auto; /* 垂直方向出现滚动条 */
     overflow-x: hidden; /* 水平方向隐藏滚动条 */
     width: 100%; /* 宽度设置为100% */
